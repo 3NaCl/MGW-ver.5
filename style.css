@@ -1,0 +1,46 @@
+
+
+body{
+  margin:0;
+  background-color: skyblue
+}
+h1 {
+  font-size:45px;
+  text-align: center;
+  border-bottom:1px solid gray;
+  margin:0;
+  padding:20px;
+}
+li {
+  color:lime;
+}
+a {
+  text-decoration: none;
+}
+#grid ul {
+  border-right:1px solid gray;
+  width:100px;
+  margin:0;
+  padding:40px;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 10px 1fr;
+}
+#grid #article {
+  padding-left:190px;
+}
+a {
+  color:white;
+}
+@media(max-width:800px) {
+  #grid {
+    display: block;
+  }
+  #grid ul {
+    border-right:none;
+  }
+  h1 {
+    border-bottom:none;
+  }
+}
